@@ -68,6 +68,26 @@ strong {
 dfn {
   font-style: italic;
 }
+
+hr.style18 { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 2px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr.style18:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 2px 0; 
+  border-radius: 20px; 
+}
+
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
