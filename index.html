@@ -17,7 +17,22 @@
     }
 </style>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar-fixed-top navbar navbar-inverse">
+            <div class="container-fluid">
+                <div style = "margin-right:100px" class="navbar-header">
+                <a class="navbar-brand" href="#">Viper Consulting</a>
+                </div>
+                <ul class="nav navbar-nav">
+                <li style = "margin-right:50px" class="active"><a href="#AboutUs">About Us</a></li>
+                <li style = "margin-right:50px"><a href="#Client">Client</a></li>
+                <li style = "margin-right:50px"><a href="#ClientProject">Client Project</a></li> 
+                <li style = "margin-right:50px"><a href="#Documents">Documents</a></li> 
+                <li style = "margin-right:50px"><a href="#ContactUs">Contact Us</a></li> 
+                <li style = "margin-right:50px"><a href="#OurTeam">Our Team</a></li> 
+                </ul>
+            </div>
+        </nav>
     <div class="w3-content w3-container" style="max-width:1050px;margin-top:80px;margin-bottom:80px">
     <div class="w3-section">
     <h1 style = "margin-bottom:30px" class = "w3-lobster w3-center w3-xxxlarge"> <b>Viper Consulting</b></h1>
@@ -54,21 +69,21 @@
       <span style = "height:15px;margin-bottom:5px" class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
     </div>
   </div>
-        <div class="section">
+        <div class="section" id = "AboutUs">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="text-primary">About Us</h1>
                         <hr class = "style18">
                         <p class = "w3-large">
-                            Viper Consulting is a team of dedicated systems analysts and developers in the Health Information Science and Computer Science programs at the University of Victoria. Our interests as a group include vitalizing health-related systems and creating innovative solutions to any challenges your organization might be facing. 
+                            Viper Consulting is a team of dedicated systems analysts and developers in the Health Information Science and Computer Science programs at the University of Victoria. Our interests as a group include vitalizing health-related systems and creating innovative solutions to any challenges your organization might be facing. Viper Consulting is dedicated to providing high-quality enrichment to the systems in your organization, as well as providing you with necessary resources to maintain a more efficient workflow.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="section">
+        <div class="section" id = "Client">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -82,7 +97,7 @@
             </div>
         </div>
         
-        <div class="section">
+        <div class="section" id = "ClientProject">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -100,7 +115,7 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id = "Documents">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -113,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id = "ContactUs">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -124,7 +139,7 @@
                 </div>
             </div>
         </div>
-         <div class="section">
+         <div class="section" id = "OurTeam">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -221,6 +236,14 @@
         </div>
         </div>
 <script>
+$(document).ready(function(){
+  $(document).on('click', 'a', function(event){
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+});
+});
 // Slideshow script
 var slideIndex = 1;
 showDivs(slideIndex);
