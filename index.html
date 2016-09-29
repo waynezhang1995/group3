@@ -121,9 +121,7 @@
                     <div class="col-md-12">
                         <h1 class="text-primary">Documents</h1>
                         <hr class = "style18">
-                        
-                            <a class = "w3-large" href = "RFPGroup3.pdf" download><i class="fa fa-file" aria-hidden="true"></i> <b style = " text-decoration: underline">Request For Proposal</b></a>
-
+                            <a style = "cursor:pointer" class = "w3-large" onclick = "openDoc()"><i class="fa fa-file" aria-hidden="true"></i> <b style = " text-decoration: underline">Request For Proposal</b></a>
                     </div>
                 </div>
             </div>
@@ -244,6 +242,10 @@ $(document).ready(function(){
     }, 500);
 });
 });
+
+function openDoc(){
+    window.open("https://csc3752016.github.io/group3/RFPGroup3.pdf");
+}
 // Slideshow script
 var slideIndex = 1;
 showDivs(slideIndex);
