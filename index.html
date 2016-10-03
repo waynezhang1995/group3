@@ -131,8 +131,8 @@
                     <div class="col-md-12">
                         <h1 class="text-primary">Documents</h1>
                         <hr class = "style18">
-                            <p><a style = "cursor:pointer" class = "w3-large" onclick = "openDoc()"><i class="fa fa-file" aria-hidden="true"></i> <b style = " text-decoration: underline">Request For Proposal</b></a></p>
-                   	    <p><a style = "cursor:pointer" class = "w3-large" onclick = "openDoc2()"><i class="fa fa-file" aria-hidden="true"></i> <b style = " text-decoration: underline">Elicitation Notes</b></a></p>
+                            <p><a style = "cursor:pointer" class = "w3-large" onclick = "openDoc('https://csc3752016.github.io/group3/RFPGroup3.pdf')"><i class="fa fa-file" aria-hidden="true"></i> <b style = " text-decoration: underline">Request For Proposal</b></a></p>
+                   	    <p><a style = "cursor:pointer" class = "w3-large" onclick = "openDoc('https://csc3752016.github.io/group3/client interview notes.docx')"><i class="fa fa-file" aria-hidden="true"></i> <b style = " text-decoration: underline">Elicitation Notes</b></a></p>
 			</div>
                 </div>
             </div>
@@ -255,13 +255,10 @@ $(document).ready(function(){
 });
 });
 
-function openDoc(){
-    window.open("https://csc3752016.github.io/group3/RFPGroup3.pdf");
+function openDoc(path){
+    window.open(path);
 }
 
-function openDoc2(){
-    window.open("https://csc3752016.github.io/group3/client interview notes.docx");
-}
 	
 // Slideshow script
 var slideIndex = 1;
