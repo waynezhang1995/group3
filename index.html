@@ -131,9 +131,8 @@
                     <div class="col-md-12">
                         <h1 class="text-primary">Documents</h1>
                         <hr class = "style18">
-                            <p><a style = "cursor:pointer" class = "w3-large" onclick = "openDoc('https://csc3752016.github.io/group3/RFPGroup3.pdf')"><i class="fa fa-file" aria-hidden="true"></i> <b style = " text-decoration: underline">Request For Proposal</b></a></p>
-                   	    <p><a style = "cursor:pointer" class = "w3-large" onclick = "openDoc('https://csc3752016.github.io/group3/client interview notes.docx')"><i class="fa fa-file" aria-hidden="true"></i> <b style = " text-decoration: underline">Elicitation Minutes</b></a></p>
-			</div>
+                            <a style = "cursor:pointer" class = "w3-large" onclick = "openDoc()"><i class="fa fa-file" aria-hidden="true"></i> <b style = " text-decoration: underline">Request For Proposal</b></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -214,7 +213,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="w3-card-4" style = "margin-bottom:30">
-                        <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png" style="width:100%; height:200px">
+                        <img src="Zane.jpg" style="width:100%; height:200px">
                             <div class="w3-container">
                                 <h3>Zane Li</h3>
                                 <p class="w3-opacity">Project Leader</p>
@@ -222,7 +221,7 @@
                             </div>
                         </div>
                         <div class="w3-card-4">
-                        <img src="Zane.jpg" style="width:100%; height:200px">
+                        <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png" style="width:100%; height:200px">
                             <div class="w3-container">
                                 <h3>Wayne Zhang</h3>
                                 <p class="w3-opacity">Analyst, Web Developer</p>
@@ -255,11 +254,9 @@ $(document).ready(function(){
 });
 });
 
-function openDoc(path){
-    window.open(path);
+function openDoc(){
+    window.open("https://csc3752016.github.io/group3/RFPGroup3.pdf");
 }
-
-	
 // Slideshow script
 var slideIndex = 1;
 showDivs(slideIndex);
